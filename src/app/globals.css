@@ -340,3 +340,35 @@ th {
   font-weight: 600;
   color: var(--text-secondary);
 }
+
+/* Badge Utilities */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.badge-success {
+  background-color: #ecfdf5;
+  color: #059669;
+}
+
+.badge-warning {
+  background-color: #fffbeb;
+  color: #d97706;
+}
+
+.badge-info {
+  background-color: #eff6ff;
+  color: #2563eb;
+}
+
+.badge-default {
+  background-color: #f3f4f6;
+  color: #4b5563;
+}
+
