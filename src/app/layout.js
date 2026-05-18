@@ -1,5 +1,6 @@
 import './globals.css';
 import Link from 'next/link';
+import Sidebar from '@/components/Sidebar';
 
 export const metadata = {
   title: 'Tinipet | Tổng quan',
@@ -13,24 +14,7 @@ export default function RootLayout({ children }) {
         <div className="layout-container">
           
           {/* Sidebar */}
-          <aside className="sidebar">
-            <div className="sidebar-brand">TINIPET</div>
-            <button className="quick-action-btn">Bán hàng</button>
-            <div className="sidebar-menu">
-              <Link href="/" className="menu-item active">Tổng quan</Link>
-              <div className="menu-item">Đơn hàng</div>
-              <div className="menu-item">Vận chuyển</div>
-              <Link href="/products" className="menu-item">Sản phẩm</Link>
-              <div className="menu-item">Quản lý kho</div>
-              <div className="menu-item">Khách hàng</div>
-              
-              <div className="menu-group" style={{marginTop: '24px'}}>
-                <div className="menu-title">KẾ TOÁN VÀ THUẾ</div>
-                <Link href="/invoices" className="menu-item">Sapo Invoice</Link>
-                <div className="menu-item">Sapo Accounting</div>
-              </div>
-            </div>
-          </aside>
+          <Sidebar />
 
           {/* Main Content */}
           <main className="main-wrapper">
