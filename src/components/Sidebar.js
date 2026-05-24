@@ -88,6 +88,19 @@ export default function Sidebar() {
         })}
         
         <div className="menu-group" style={{ marginTop: '24px' }}>
+          <div className="menu-title">BÁO CÁO</div>
+          <Link 
+            href="/reports" 
+            className={`menu-item ${pathname === '/reports' || pathname.startsWith('/reports') ? 'active' : ''}`}
+          >
+            <svg className="sidebar-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+            </svg>
+            <span>Báo cáo</span>
+          </Link>
+        </div>
+        
+        <div className="menu-group" style={{ marginTop: '24px' }}>
           <div className="menu-title">KẾ TOÁN VÀ THUẾ</div>
           <Link 
             href="/invoices" 
